@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Background Blobs -->
+    <ImageView
+        android:id="@+id/main_blob1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/blob_yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/blob_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-20dp"
+        android:src="@drawable/blob_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/blob_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/blob_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/blob_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="-10dp"
+        android:src="@drawable/blob_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="-50dp"
+        android:src="@drawable/blob_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_blob9"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/blob_orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:transitionName="logo_transition"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ශ්‍රී"
+            android:textColor="#000000"
+            android:textSize="80sp"
+            android:includeFontPadding="false"
+            app:fontFamily="@font/abhaya" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Maps"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:includeFontPadding="false"
+            android:textStyle="normal"
+            app:fontFamily="@font/gsans" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/blob_green"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_card"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/blob_orange"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_card"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/blob_red"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Shadow for the top of the card -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/blob_yellow"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_card"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@drawable/top_shadow_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_card" />
+
+    <!-- Bottom Content Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to "
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/gsans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ශ්‍රී"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:includeFontPadding="false"
+                    app:fontFamily="@font/abhaya" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maps !"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/gsans" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="We help you track your bus in real-time,\nstay updated and travel with confidence\nto anywhere in Sri Lanka."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:fontFamily="@font/gsans" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_get_started"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/button_background"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:fontFamily="@font/gsans" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

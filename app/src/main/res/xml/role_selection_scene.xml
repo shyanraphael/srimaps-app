@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1200"
+        motion:autoTransition="animateToEnd">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/role_header_group"
+                motion:framePosition="30"
+                android:alpha="0.0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/role_button_container"
+                motion:framePosition="30"
+                android:alpha="0.0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/btn_back"
+                motion:framePosition="30"
+                android:alpha="0.0" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/btn_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:alpha="0.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/role_header_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/role_button_container"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/role_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="100dp"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/btn_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:alpha="1.0"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/role_header_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/role_button_container"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/role_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="0dp"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+</MotionScene>

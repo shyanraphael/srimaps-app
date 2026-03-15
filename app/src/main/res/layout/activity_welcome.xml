@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- 1. Top Left - Yellow -->
+    <ImageView
+        android:id="@+id/blob1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/blob_yellow" />
+
+    <!-- 2. Top Right - Green -->
+    <ImageView
+        android:id="@+id/blob5"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="-50dp"
+        android:src="@drawable/blob_green" />
+
+    <!-- 3. Mid Left - Red -->
+    <ImageView
+        android:id="@+id/blob3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-60dp"
+        android:src="@drawable/blob_red" />
+
+    <!-- 4. Mid Right - Orange -->
+    <ImageView
+        android:id="@+id/blob2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-40dp"
+        android:src="@drawable/blob_orange" />
+
+    <!-- 5. Bottom Left - Orange -->
+    <ImageView
+        android:id="@+id/blob7"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-40dp"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/blob_orange" />
+
+    <!-- 6. Bottom Right - Red -->
+    <ImageView
+        android:id="@+id/blob8"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/blob_red" />
+
+    <!-- 7. Bottom Center Area - Yellow -->
+    <ImageView
+        android:id="@+id/blob6"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/blob_yellow" />
+
+    <!-- 8. Top Center Area - Green -->
+    <ImageView
+        android:id="@+id/blob4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/blob_green" />
+
+    <!-- Welcome Content (Compose) -->
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/welcome_compose_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:transitionName="logo_transition" />
+
+</RelativeLayout>

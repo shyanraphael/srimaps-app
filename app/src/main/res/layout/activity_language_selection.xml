@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layoutDescription="@xml/language_selection_scene">
+
+    <!-- Grouped Header and Icon -->
+    <LinearLayout
+        android:id="@+id/header_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_container">
+
+        <TextView
+            android:id="@+id/tv_select_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select language"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/gsans" />
+
+        <ImageView
+            android:id="@+id/iv_morph_shape"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_bus"
+            android:transitionName="logo_transition" />
+
+    </LinearLayout>
+
+    <!-- Bottom Section for Buttons -->
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_english"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:text="English"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:fontFamily="@font/gsans" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sinhala"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:text="සිංහල"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:fontFamily="@font/gsans" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_tamil"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/button_background"
+            android:text="தமிழ்"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:fontFamily="@font/gsans" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
